@@ -1,0 +1,47 @@
+[project]
+name = "image-classification"
+version = "0.1.0"
+description = "CNN Image Classification with PyTorch"
+authors = [
+    {name = "Image Classification Project"}
+]
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "pillow>=9.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.6.0",
+    "seaborn>=0.12.0",
+    "scikit-learn>=1.3.0",
+    "tqdm>=4.64.0",
+    "pyyaml>=6.0",
+    "tensorboard>=2.12.0",
+]
+requires-python = ">=3.12"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[project.scripts]
+train = "src.train:main"
+evaluate = "src.evaluate:main"

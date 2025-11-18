@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"\nimport sys\nimport os\n# Test importing the train module itself\ntry:\n    sys.path.insert(0, os.path.join(os.getcwd(), ''src''))\n    import train\n    print(''✅ train.py imports successfully with updated path configuration!'')\nexcept ImportError as e:\n    print(f''❌ Import error: {e}'')\nexcept Exception as e:\n    print(f''❌ Other error: {e}'')\n\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
