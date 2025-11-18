@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python -m src.data.preprocessor)"
+      "Bash(python -m src.data.preprocessor)",
+      "Bash(code --list-extensions)"
     ],
     "deny": [],
     "ask": []
