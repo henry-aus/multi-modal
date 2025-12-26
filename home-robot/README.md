@@ -82,6 +82,7 @@ home-robot/
 │   ├── nyu_depth_v2.py          # Dataset processing and utilities
 │   └── nyu_depth_v2_labeled.mat # NYU Depth V2 dataset (download required)
 ├── train/
+│   ├── bclip.py                 # BLIP2 VQA training with LoRA fine-tuning
 │   ├── dino.py                  # GroundingDino training script
 │   └── training_utils.py        # Training utilities and metrics
 ├── device_utils.py              # Device detection and compatibility
