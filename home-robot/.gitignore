@@ -1,0 +1,258 @@
+# Home Robot Multi-Modal AI System - Git Ignore Configuration
+
+# ================================
+# Dataset Files (Large Binary Data)
+# ================================
+# NYU Depth V2 dataset file (2.97GB) - exclude from version control
+data/nyu_depth_v2_labeled.mat
+data/*.mat
+data/*.h5
+data/*.hdf5
+*.mat
+*.h5
+*.hdf5
+
+# ================================
+# Python Environment & Cache
+# ================================
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ================================
+# Machine Learning & AI Models
+# ================================
+# Model checkpoints and weights
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.h5
+*.pb
+*.onnx
+*.tflite
+
+# Training outputs and logs
+training_results/
+logs/
+runs/
+outputs/
+checkpoints/
+models/
+pretrained/*/
+wandb/
+mlruns/
+.neptune/
+
+# TensorBoard logs
+events.out.tfevents.*
+tensorboard_logs/
+
+# ================================
+# Development Tools
+# ================================
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Claude Code specific
+.claude/
+.claude-*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# pytest cache
+.pytest_cache/
+.cache/
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# ================================
+# System and Temporary Files
+# ================================
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.out
+*.pid
+*.lock
+
+# ================================
+# Configuration and Secrets
+# ================================
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+secrets.json
+config.local.json
+*.key
+*.pem
+
+# ================================
+# Documentation Build
+# ================================
+# Sphinx documentation
+docs/_build/
+docs/build/
+
+# MkDocs
+site/
+
+# ================================
+# Package Management
+# ================================
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Poetry
+poetry.lock
+
+# Pipenv
+Pipfile.lock
+
+# ================================
+# Testing and Benchmarking
+# ================================
+# Test outputs
+test_output/
+test_results/
+benchmark_results/
+
+# ================================
+# Media and Large Files
+# ================================
+# Images and videos (except documentation assets)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mkv
+
+# Audio files
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+
+# Exception: Allow documentation images
+!docs/**/*.png
+!docs/**/*.jpg
+!docs/**/*.svg
+!README_assets/**
+!assets/**
+
+# ================================
+# Cloud and Deployment
+# ================================
+# Docker
+.dockerignore
+Dockerfile.local
+docker-compose.override.yml
+
+# Kubernetes
+*.kubeconfig
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# ================================
+# Misc Development
+# ================================
+# Node.js (if used for any tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Backup files
+*.backup
+*.bak
+*.orig
+
+# Generated files
+*.generated.*
+*_generated.*
+
+# ================================
+# Project Specific Exclusions
+# ================================
+# Training experiments and temporary results
+experiments/
+temp_training/
+debug_output/
+validation_images/
+sample_outputs/
+
+# Local configuration overrides
+config.local.py
+settings.local.py
+
+# Performance profiling
+*.prof
+*.cprofile
